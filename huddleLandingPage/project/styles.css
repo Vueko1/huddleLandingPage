@@ -1,0 +1,128 @@
+/* variables */
+/* google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans");
+/* resets and boxsize */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+/* styling */
+body {
+  background-color: #674baf;
+  background-image: url(images/bg-mobile.svg);
+  background-size: cover;
+  font-family: 'Open Sans';
+  padding: 2em 1em;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.image-wrapper {
+  width: auto;
+  margin: 0 auto;
+  margin-bottom: 3em;
+}
+
+.image-wrapper .image {
+  max-width: 100%;
+  height: auto;
+}
+
+.logo-wrapper {
+  width: 90%;
+  text-align: left;
+  margin-bottom: 5em;
+}
+
+.logo-wrapper__image {
+  max-width: 100%;
+  height: auto;
+}
+
+.overview {
+  width: 75%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 500px;
+}
+
+.overview__heading {
+  font-size: 2.5em;
+}
+
+.overview__paragraph {
+  font-size: 1.5em;
+}
+
+.overview__bttn {
+  width: 200px;
+  padding: 1em 3em;
+  border-radius: 2.5em;
+  border: none;
+  color: #674baf;
+  font-size: 1.3em;
+}
+
+.overview__bttn:hover {
+  background-color: #e882e8;
+  color: white;
+}
+
+.social-media {
+  margin-top: 3em;
+}
+
+i {
+  border-radius: 50%;
+  border: 1px solid white;
+  padding: 1em;
+  width: 50px;
+  height: 50px;
+}
+
+@media screen and (min-width: 1300px) {
+  .content-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    text-align: left;
+    gap: 1em;
+  }
+  .content-wrapper .overview__bttn {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  .social-media {
+    position: absolute;
+    right: 10em;
+    bottom: 0;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,126 @@
+/* variables */
+
+$violetColor : hsl(257, 40%, 49%);
+$softMagentaColor : hsl(300, 69%, 71%);
+
+/* google fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans");
+
+/* resets and boxsize */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
+/* styling */
+
+body {
+    background-color: $violetColor;
+    background-image: url(images/bg-mobile.svg);
+    background-size: cover;
+    font-family: 'Open Sans';
+    padding: 2em 1em;
+    color: white;
+    text-align: center;
+    position: relative;
+
+}
+
+.image-wrapper {
+    width: auto;
+    margin: 0 auto;
+    margin-bottom: 3em;
+
+    .image {
+        max-width: 100%;
+        height: auto;
+        
+    }
+}
+
+.logo-wrapper {
+    width: 90%;
+    text-align: left;
+    margin-bottom: 5em;
+
+    &__image {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+.overview {
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    align-items: center;
+    max-width: 500px;
+
+    &__heading {
+        font-size: 2.5em;
+    }
+
+    &__paragraph {
+        font-size: 1.5em;
+    }
+
+    &__bttn {
+        width: 200px;
+        padding: 1em 3em;
+        border-radius: 2.5em;
+        border: none;
+        color: $violetColor;
+        font-size: 1.3em;
+
+        &:hover {
+            background-color: $softMagentaColor;
+            color: white;
+        }
+    }
+}
+
+.social-media {
+    margin-top: 3em;
+}
+
+i {
+    border-radius: 50%;
+    border: 1px solid white;
+    padding: 1em;
+    width: 50px;
+    height: 50px;
+  }
+
+@media screen and (min-width: 1300px){
+
+    .content-wrapper {
+        display: flex;
+        flex-direction: row;
+        text-align: left;
+        gap: 1em;
+
+        .overview__bttn {
+            align-self: flex-start;
+        }
+    }
+
+    .social-media {
+        position: absolute;
+        right: 10em;
+        bottom: 0;
+    }
+
+}
