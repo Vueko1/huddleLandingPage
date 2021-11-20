@@ -104,6 +104,11 @@ i {
     height: 50px;
   }
 
+i:hover {
+    color: $softMagentaColor;
+    border-color: $softMagentaColor;
+}
+
 @media screen and (min-width: 1300px){
 
     .content-wrapper {
