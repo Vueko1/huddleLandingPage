@@ -103,6 +103,11 @@ i {
   height: 50px;
 }
 
+i:hover {
+    color: #e882e8;
+    border-color: #e882e8;
+}
+
 @media screen and (min-width: 1300px) {
   .content-wrapper {
     display: -webkit-box;
